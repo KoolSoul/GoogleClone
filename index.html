@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Search</title>
+    <style>
+        .link-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .images,
+        .advance {
+            box-sizing: border-box;
+            height: 48px;
+            line-height: normal;
+            padding: 0 5px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .images {
+            margin-right: 0px; /* Add some margin to separate the links */
+        }
+
+        .search-form {
+            display: flex;
+            align-items: center;
+            position: fixed;
+            right: 40%;
+            top: 25%;
+        }
+
+        .search-form input[type="text"],
+        .search-form input[type="submit"] {
+            height: 30px;
+            box-sizing: border-box;
+            margin: 0;
+            
+        }
+
+        .google-logo {
+            position: fixed;
+            top: 15%;
+            left: 43.5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="link-container">
+        <a class="images" href="image.html">Images</a>
+        <a class="advance" href="advance.html">Advanced Search</a>
+    </div>
+    <div class="google-logo">
+        <img src="googlelogo_color_272x92dp.png" alt="Google Logo">
+    </div>
+    <form class="search-form" action="https://www.google.com/search">
+        <input type="text" name="q">
+        <input type="submit" value="Google Search">
+    </form>
+</body>
+</html>
